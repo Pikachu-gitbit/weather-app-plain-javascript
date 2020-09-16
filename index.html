@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="html.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER APP</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body onload=date(),startTime(),getloco()>
+
+    <div class="container">
+        <div class="between">
+            <div class="time">
+                <p id="hours"></p>
+                <p id="minute"></p>
+                <p id="seconds"></p>
+            </div>
+        </div>
+        <div id="weather">
+            <h1 id="temp"></h1>
+            <h4 id="wind"></h4>
+            <h4 id="des"></h4>
+            <h4 id="hum"></h4>
+            <h2 id="location"></h2>
+            <h3 id="country"></h3>
+        </div>
+        <div class="date_info">
+            <p id="day"></p>
+            <p class="date" id="date"></p>
+        </div>
+
+        <div id="inpt">
+            <input id="input" placeholder="city name only" onfocus="this.value=''" type="text">
+            <button id="search" onclick=getloco(),weatherBalloon()><i style="margin: 11px;" id="sea"
+                    class="far fa-arrow-alt-circle-right"></i></button>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="html.js"></script>
+    <script src="data.js"></script>
+    <script src="https://kit.fontawesome.com/009c2c0a56.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
